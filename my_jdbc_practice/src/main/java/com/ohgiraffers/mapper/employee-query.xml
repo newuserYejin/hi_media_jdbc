@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <entry key="allSelect">
+        select * from employee;
+    </entry>
+
+    <entry key="number2">
+        select
+            emp_id
+            , emp_name
+        from
+            employee;
+    </entry>
+
+    <entry key="number3">
+        select
+            dept_code
+            , emp_name
+            , salary
+        from
+            employee
+        where
+            salary >= 3000000
+    </entry>
+
+    <entry key="number4">
+
+        select
+            emp_name,
+            salary,
+            salary * bonus as bonusSalary
+        from
+            employee
+        where
+            bonus is not null;
+
+    </entry>
+
+</properties>
